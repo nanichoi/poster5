@@ -1,6 +1,14 @@
 /* 공통  */
 /* div   {	border:1px solid red;}*/
-ul,li { padding:0; margin:0;}
+@media print {
+        ul,li {
+          list-style:none;
+        }
+        a {
+          text-decoration: none;
+        }
+ }
+ul,li { padding:0; margin:0;list-style:none;}
 body  {	margin:20px;background-color:#000;font-family: Arial, sans-serif, 'Dotum';font-size:14px;}
 #wrap {  width:100%; }
 .poster	{	margin:0 auto;max-width: 750px;
