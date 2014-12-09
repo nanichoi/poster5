@@ -3,7 +3,7 @@
         var h = d.getHours();  
     window.onload = function() {
          
-        if (h>12){            
+        if (h<12){            
             document.body.style.background = "url('image/back2.jpg') no-repeat center top";
             
             document.getElementsByClassName("event")[0].innerHTML="이벤트중";
@@ -18,7 +18,7 @@
     }
 
 function change() {
- if(h>12) {
+ if(h<12) {
   location.href="poster5.html"
     }
 else {
